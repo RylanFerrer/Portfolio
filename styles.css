@@ -5,6 +5,16 @@ body, html {
 
 }
 
+h1 {
+    font-family: 'Roboto-Black', sans-serif;
+    font-size: 50px;
+  font-weight: 700;
+
+}
+/* Nav Bar */
+ .nav-item  {
+  list-style: none;
+}
 /* Hero Header */
 .hero-text {
   text-align: center;
@@ -16,7 +26,7 @@ body, html {
   font-weight: bold;
 }
 .hero-image {
- background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/van.jpg);
+ background-image:  linear-gradient(rgba(113, 137, 191, 0.8), rgba(134, 110, 199, 0.8)), url(images/van.jpg);
  height: 100%;
 
  background-position: center;
@@ -24,18 +34,44 @@ body, html {
   background-size: cover;
   position: relative;
 }
+/* Headings */
+.medium-heading {margin-top: 10px;
+text-align: center;}
+
+/* Buttons */
+.btn-projects{
+  margin-right: 10px;
+
+}
 
 /* Project Section */
+
+  .icon {
+    display:inline-block;
+   line-height: 65px;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   vertical-align: bottom;
+
+  }
+  .icon:hover{
+    color: red;
+  }
 
 
 /* About Section */
 
-
+.middle-container {
+  background-color: rgba(113, 137, 191, 1);
+  padding: 7% 15%;
+}
 .about-section {
   margin-top: 80px;
   margin-bottom: 100px;
   text-align: center;
   color: #305f72
+
 }
 .self-image {
   border-radius: 50%;

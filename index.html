@@ -4,12 +4,20 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-       <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="plugins/component-slidebars.min.css" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.css">
+
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
 
 
     </script>
@@ -18,30 +26,62 @@
   <body>
 
 
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href =""><img src = "images/icon.png" width = 40px;/></a>
-      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
-      </button>
-      <div class = "collapse navbar-collapse" id = "navbarTogglerDemo02">
 
-       <ul class="navbar-nav ml-auto">
-           <li class="nav-item">
-               <a class="nav-link" href="#about">About </a>
-           </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">Contact </a>
-           </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">Portfolio </a>
-           </li>
-       </ul>
-      </div>
 
-   </nav>
         <!-- Hero Header -->
     <div class="hero-image">
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-sm   offcanvas-desktop navbar-light">
+        <a class="navbar-brand" href="#">Rylan Ferrer</a>
+        <div class="navbar-collapse">
+
+
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="about">Featured Work</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="">About</a>
+                  </li>
+              </ul>
+
+          </div>
+      </nav>
+
+      <nav canvas="mobile" class="offcanvas navbar-light">
+     <div class="row no-gutters">
+       <div class="col text-left">
+         <button class="navbar-toggler navbar-toggle-offcanvas-left">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+       </div>
+       <div class="col-8 text-center">
+       </div>
+
+         </button>
+       </div>
+     </div>
+   </nav>
+
+   <div off-canvas="offcanvas-left left reveal " class="container p-3" style="z-index: 1;">
+     Menu
+     <li class="nav-item">
+         <a class="nav-link" href="">Contact</a>
+     </li>
+     <li class="nav-item">
+         <a class="nav-link" href="">Pricing</a>
+     </li>
+     <li class="nav-item">
+         <a class="nav-link" href="">Download</a>
+     </li>
+
+   </div>
+
+
+
 
       <div class="hero-text">
         <h1>Rylan Ferrer</h1>
@@ -54,7 +94,7 @@
   </div>
 <div class="container">
       <!-- Latest Work -->
-  <div class="row my-5 py-5 wow bounceIn" data-wow-delay="1s">
+  <div class="row my-5 py-5 wow bounceIn" data-wow-delay="0.5s">
     <div class="col-12 col-lg-7">
       <img class = "img-fluid border shadow" src = "images/BCloud.png" />
 
@@ -71,47 +111,55 @@
           <li>
               Bootstrap 4
           </li>
+          <li>
+            Font Awesome
+          </li>
         </ul>
 
-          <a href=# class = "btn btn-outline">View </a>
+      <div class="view-code">
+        <a href=https://rylanferrer.github.io/BCloud/ class = "btn btn-projects btn-outline">View </a>
+        <a href = "https://github.com/RylanFerrer/BCloud"> <i class=" icon fas fa-2x fa-code"></i> </a>
+      </div>
       </div>
     </div>
   </div>
 
   <div class="row my-5 py-5">
     <div class="col-12 col-lg-7 order-lg-2">
-      <img class = "img-fluid border shadow" src = "images/unity.jpg" />
+      <img class = "img-fluid border shadow" src = "images/simplepiano.png" />
 
     </div>
     <div class="col-12 col-lg-5" >
       <div>
-        <h3> Block Breakers</h3>
-        <p>Hello this is a test</p>
+        <h3> The Simple Piano</h3>
+        <p>A simple piano application I made using javascript.</p>
+        <ul>
+          <li>
+            HTML & CSS
+          </li>
 
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="middle-container">
-
-      <!-- About -->
-    <div class="row">
-      <div class = "col">
-        <div class="about-section " id = "about">
-          <img  class = "self-image"src="images/rylan.png" alt="">
-          <h2 style = "margin-top: 10px;">About Me</h3>
-          <p style="color:black">I am a first year student at KPU studing for my Bachelor of Technology. <br />
-              I enjoy learning and programming</p>
+          <li>
+              JavaScript
+          </li>
+          <li>
+            Google Fonts
+          </li>
+        </ul>
+        <div class="view-code">
+          <a href=https://rylanferrer.github.io/The-Simple-Piano/ class = "btn btn-projects btn-outline">View </a>
+          <a href = "https://github.com/RylanFerrer/The-Simple-Piano"> <i class=" icon fas fa-2x fa-code"></i> </a>
         </div>
       </div>
     </div>
   </div>
-  <hr />
+
+    </div>
+
+  <div class="middle-container">
+
 
     <div class="skills ">
-      <h2>My Skills.</h2>
+      <h2 class = "medium-heading">My Skills.</h2>
       <div class="skill-row wow fadeInDown" data-wow-delay="0.2s">
         <img class="computer-img" src="images/programming.png" alt="">
         <h3>Design & Development</h3>
@@ -123,15 +171,15 @@
         <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
       </div>
     </div>
-<div class = "row">
-    <div class="frontEndSkills col-12 ">
-      <h4>Front-End Technologies</h4>
-        <ul>
-          <li> HTML </li>
-          <li> CSS</li>
-          <li> JavaScript </li>
-          <li> Bootstrap 4</li>
-        </ul>
+    <div class = "row">
+        <div class="frontEndSkills col-12 ">
+          <h4>Front-End Technologies</h4>
+            <ul>
+              <li> HTML </li>
+              <li> CSS</li>
+              <li> JavaScript </li>
+              <li> Bootstrap 4</li>
+            </ul>
 
 
       </div>
@@ -141,7 +189,22 @@
 
 
 
+
+
+  <!-- About -->
+<div class="row">
+  <div class = "col">
+    <div class="about-section " id = "about">
+      <img  class = "self-image"src="images/rylan.png" alt="">
+      <h2 class = "medium-heading">About Me</h3>
+      <p style="color:black">I am a first year student at KPU studing for my Bachelor of Technology. <br />
+          I enjoy learning and programming</p>
+    </div>
   </div>
+</div>
+</div>
+<hr />
+
 
 
 
@@ -149,7 +212,7 @@
 
 
   <div class="bottom-container" >
-    <div class="help" style="text-allign:center">
+
       <h2>Get In Touch</h2>
       <h3>Lorem ipsum dolor sit amet, non elit.</h3>
       <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
@@ -178,6 +241,7 @@
 
   </footer>
 
+  <script src="js/index.js" charset="utf-8"></script>
   <script src="js/wow.min.js"></script>
           <script>
           new WOW().init();
@@ -190,5 +254,9 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="plugins/slidebars.min.js"></script>
+      <script src="plugins/component-slidebars.min.js"></script>
+
+
     </body>
 </html>
