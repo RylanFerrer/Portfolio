@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body, html {
   height: 100%;
   margin: 0;
@@ -11,10 +14,23 @@ h1 {
   font-weight: 700;
 
 }
+
 /* Nav Bar */
  .nav-item  {
   list-style: none;
+
+  font-weight: bold;
+
 }
+
+.fixed-top {
+  background-color: rgba(96, 114, 164, 0.20);
+}
+.index {
+  z-index: 1;
+}
+
+
 /* Hero Header */
 .hero-text {
   text-align: center;
@@ -35,8 +51,15 @@ h1 {
   position: relative;
 }
 /* Headings */
-.medium-heading {margin-top: 10px;
-text-align: center;}
+.medium-heading {margin-top: 10%;
+text-align: center;
+color:black;}
+
+
+.small-heading {
+  text-align: center;
+}
+
 
 /* Buttons */
 .btn-projects{
@@ -46,7 +69,7 @@ text-align: center;}
 
 /* Project Section */
 
-  .icon {
+  .project-icon {
     display:inline-block;
    line-height: 65px;
    width: 50px;
@@ -55,16 +78,16 @@ text-align: center;}
    vertical-align: bottom;
 
   }
-  .icon:hover{
+  .project-icon:hover{
     color: red;
   }
 
 
-/* About Section */
+/* Skill Section */
 
 .middle-container {
-  background-color: rgba(113, 137, 191, 1);
-  padding: 7% 15%;
+  background-color: #9EA9F0;
+  padding: 0.5% 15%;
 }
 .about-section {
   margin-top: 80px;
@@ -73,29 +96,12 @@ text-align: center;}
   color: #305f72
 
 }
-.self-image {
-  border-radius: 50%;
-  width: 15%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 
-}
 
-.test{
 
-  margin-left: auto;
-  margin-right: auto;
-
-}
 
 .infopic {
   width: 50px;
-}
-
- h2{
-
-color: #305f72
 }
 
 .skill-row{
@@ -103,25 +109,28 @@ color: #305f72
   margin: 100px auto 100px auto;
   text-align: left;
   line-height: 2;
+
 }
 
 .computer-img {
-  width: 25%;
+  width: 30%;
 float: left;
 margin-right: 30px;
 }
 .team-img{
-  width: 25%;
+  width: 30%;
   float: right;
   margin-left: 30px;
 }
 
-.bottom-container {
+.skill-box {
+  background-color: white;
+  text-align: center;
 
-  background-color: #efefef;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
+}
+.skill-list {
+  padding-left: 0;
+  list-style: none;
 }
 
 .work {
@@ -133,37 +142,61 @@ margin-right: 30px;
   margin-top: 80px;
 }
 
-.project-content {
 
-}
 
 .workone-img {
   float: left;
 }
 
-.frontEndSkills {
-  text-align: center;
-}
 
-.frontEndSkills ul{
-  list-style-type: none;
-}
-
-.frontEndSkills h4{
-  color: #305f72
-}
 
 
 .btn-outline {
-  color: #4fbfa8;
+  color:  #9EA9F0;
   background-color: #ffffff;
-  border-color: #4fbfa8;
+  border-color:  #9EA9F0;
   font-weight: bold;
   letter-spacing: 0.05em;
 }
 
+
+/* About/Contact */
+
 .bottom-container {
   text-align: center;
+  padding: 7% 10%;
+}
+
+
+.self-image {
+
+  margin: 0;
+    border: solid 10px #9EA9F0;
+    max-height: 400px;
+    max-width: 400px;
+
+
+}
+.about-text{
+
+  text-align: left;
+  padding: 5%;
+
+}
+
+.icon-row {
+  padding-top: 3%;
+
+
+}
+
+.icon {
+  margin-right: 10px;
+  color: black;
+
+}
+.icon:hover{
+  color: purple;
 }
 
 footer {

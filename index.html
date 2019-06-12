@@ -31,27 +31,30 @@
         <!-- Hero Header -->
     <div class="hero-image">
       <!-- NavBar -->
-      <nav class="navbar navbar-expand-sm   offcanvas-desktop navbar-light">
+      <nav class="navbar navbar-expand-sm   offcanvas-desktop navbar-light fixed-top">
         <a class="navbar-brand" href="#">Rylan Ferrer</a>
         <div class="navbar-collapse">
 
 
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                      <a class="nav-link" href="about">Featured Work</a>
+                      <a class="nav-link" href="#work">Work</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="">Skills</a>
+                      <a class="nav-link" href="#skills">Skills</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="">About</a>
+                      <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="">Resume</a>
                   </li>
               </ul>
 
           </div>
       </nav>
 
-      <nav canvas="mobile" class="offcanvas navbar-light">
+      <nav canvas="mobile" class="offcanvas navbar-light fixed-top">
      <div class="row no-gutters">
        <div class="col text-left">
          <button class="navbar-toggler navbar-toggle-offcanvas-left">
@@ -66,7 +69,7 @@
      </div>
    </nav>
 
-   <div off-canvas="offcanvas-left left reveal " class="container p-3" style="z-index: 1;">
+   <div off-canvas="offcanvas-left left reveal" class="container p-3 index">
      Menu
      <li class="nav-item">
          <a class="nav-link" href="">Contact</a>
@@ -92,9 +95,10 @@
 
 
   </div>
-<div class="container">
+<div class="container" id ="work">
       <!-- Latest Work -->
-  <div class="row my-5 py-5 wow bounceIn" data-wow-delay="0.5s">
+      <h2 class="medium-heading">Featured Work</h2>
+  <div class="row my-5 py-5 wow bounceIn" data-wow-delay="0.1s">
     <div class="col-12 col-lg-7">
       <img class = "img-fluid border shadow" src = "images/BCloud.png" />
 
@@ -118,13 +122,13 @@
 
       <div class="view-code">
         <a href=https://rylanferrer.github.io/BCloud/ class = "btn btn-projects btn-outline">View </a>
-        <a href = "https://github.com/RylanFerrer/BCloud"> <i class=" icon fas fa-2x fa-code"></i> </a>
+        <a href = "https://github.com/RylanFerrer/BCloud"> <i class=" project-icon fas fa-2x fa-code"></i> </a>
       </div>
       </div>
     </div>
   </div>
 
-  <div class="row my-5 py-5">
+  <div class="row my-5 py-5 wow bounceIn" data-wow-delay="0.1s">
     <div class="col-12 col-lg-7 order-lg-2">
       <img class = "img-fluid border shadow" src = "images/simplepiano.png" />
 
@@ -147,7 +151,7 @@
         </ul>
         <div class="view-code">
           <a href=https://rylanferrer.github.io/The-Simple-Piano/ class = "btn btn-projects btn-outline">View </a>
-          <a href = "https://github.com/RylanFerrer/The-Simple-Piano"> <i class=" icon fas fa-2x fa-code"></i> </a>
+          <a href = "https://github.com/RylanFerrer/The-Simple-Piano"> <i class=" project-icon fas fa-2x fa-code"></i> </a>
         </div>
       </div>
     </div>
@@ -158,65 +162,94 @@
   <div class="middle-container">
 
 
-    <div class="skills ">
-      <h2 class = "medium-heading">My Skills.</h2>
-      <div class="skill-row wow fadeInDown" data-wow-delay="0.2s">
+    <div class="skills " id = "skills">
+      <h2 class = "medium-heading">My Skills</h2>
+      <div class="skill-row wow fadeInDown" data-wow-delay="0.5s">
         <img class="computer-img" src="images/programming.png" alt="">
         <h3>Design & Development</h3>
-        <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+        <p>I started to learn to code when I was seventeen years old. Everyday I am excited to learn new things and become a better developer</p>
       </div>
       <div class="skill-row wow fadeInDown" data-wow-delay="0.4s">
         <img class="team-img" src="images/teamwork.png" alt="">
         <h3>Team Player</h3>
-        <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+        <p>With my experience working in the fast-food and retail industries, I am a great addition to any team!</p>
       </div>
     </div>
-    <div class = "row">
-        <div class="frontEndSkills col-12 ">
-          <h4>Front-End Technologies</h4>
-            <ul>
-              <li> HTML </li>
-              <li> CSS</li>
-              <li> JavaScript </li>
-              <li> Bootstrap 4</li>
-            </ul>
+    <div class="row">
 
+
+      <div class="col-6">
+        <div class="skill-box">
+          <h4 >Front End</h4>
+          <ul class = "skill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>JQuery</li>
+          </ul>
+
+          <h4>Back-End</h4>
+          <ul class = "skill-list">
+            <li>SQL</li>
+            <li>Node.js & Express.js</li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="skill-box">
+          <h3>Others</h3>
+          <ul class = "skill-list">
+            <li>Unity</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>Photoshop</li>
+            <li>Unix C shell</li>
+          </ul>
+        </div>
+
+
+        </div>
+
+              <div class="col-4">
+                <div class="skill-box">
+
+                </div>
+                </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="bottom-container" id = "contact" >
+
+
+
+
+
+      <div class="row">
+        <div class="col-6 about-text">
+              <h2>Get In Touch</h2>
+              <h5 class = "">Hi I am Rylan, a second year student at KPU taking my Bachelor in Technology.<br /> Lets work together!</h5>
+
+              <div class="icon-row">
+        <a href="mailto:rylanferrer@gmail.com"> <i class="fas fa-envelope fa-3x icon"></i> </a>
+              <a href="https://github.com/RylanFerrer"> <i class="fab fa-github fa-3x icon"></i> </a>
+              <a href="https://www.linkedin.com/in/rylan-ferrer-13b772178/">  <i class="fab fa-linkedin-in fa-3x icon"></i></a>
+
+              </div>
+        </div>
+        <div class="col-6">
+
+                <img src="images/rylan.png" alt="Rylan" class="self-image">
+
+        </div>
 
       </div>
 
-  </div>
-  </div>
-
-
-
-
-
-  <!-- About -->
-<div class="row">
-  <div class = "col">
-    <div class="about-section " id = "about">
-      <img  class = "self-image"src="images/rylan.png" alt="">
-      <h2 class = "medium-heading">About Me</h3>
-      <p style="color:black">I am a first year student at KPU studing for my Bachelor of Technology. <br />
-          I enjoy learning and programming</p>
     </div>
-  </div>
-</div>
-</div>
-<hr />
-
-
-
-
-
-
-
-  <div class="bottom-container" >
-
-      <h2>Get In Touch</h2>
-      <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-      <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-      <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
     </div>
 
   </div>
@@ -232,14 +265,6 @@
 
   </div>
 
-  <footer class = "bg-dark ">
-
-    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/">Twitter</a>
-    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-    <p>© 2019 Rylan Ferrer.</p>
-
-  </footer>
 
   <script src="js/index.js" charset="utf-8"></script>
   <script src="js/wow.min.js"></script>
